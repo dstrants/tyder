@@ -119,7 +119,8 @@ questions = [
 ]
 
 answers = prompt(questions, style=style)
-print('Everything logged!')
 with open("settings.py", "w") as dict_file:
     dict_file.write('set_file = ')
     json.dump(answers, dict_file)
+print('Everything configured!')
+print('Run "python backup.py" to start backing up!')
