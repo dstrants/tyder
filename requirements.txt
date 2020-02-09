@@ -3,3 +3,4 @@ docopt
 PyInquirer
 pyfiglet
 dropbox
+slackclient

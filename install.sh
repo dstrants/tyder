@@ -7,4 +7,5 @@ echo 'Installing Dependencies'
 pip install -r requirements.txt
 echo 'Creating settings file'
 touch setup.py
-echo 'Done'
+echo 'Finished!'
+echo 'Run python setup.py to get started'
