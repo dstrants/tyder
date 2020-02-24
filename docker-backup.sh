@@ -5,5 +5,7 @@ echo 'Exporting .sql file'
 docker-compose exec db pg_dump -U postgres -h localhost postgres >> backups.sql
 echo 'Archiving database to zip file'
 zip -u backup.zip backups.sql
+rm backups.sql
 cd -
+source venv/bin/activate
 python backup.py
